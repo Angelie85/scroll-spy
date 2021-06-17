@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+
+.scrollspy .form-group {
+  margin-bottom: 4rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 767.98px) {
+  .scrollspy .form-group {
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+@media (min-width: 768px) {
+  .scrollspy .form-group {
+    display: none;
+  }
+}
+
+.scrollspy .btn-secondary:not(:disabled):not(.disabled).dropdown-toggle,
+.scrollspy
+  .btn.btn-secondary-loading:not(:disabled):not(.disabled).dropdown-toggle {
+  color: #6b748e;
+}
+
+.scrollspy .menu-group,
+.scrollspy ,
+.scrollspy .mm-media--menu-group {
+  position: sticky;
+  top: 2.4rem;
+  border-left: 0.2rem solid #c1c9d5;
+  margin-left: 0.1rem;
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 767.98px) {
+  .scrollspy .menu-group,
+  .scrollspy ,
+  .scrollspy .mm-media--menu-group {
+    display: none;
+  }
+}
+
+.scrollspy .menu-group-item,
+.scrollspy  li,
+ .scrollspy li {
+  border: 0;
+  padding: 0.8rem 1.6rem;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.scrollspy .menu-group-item:not(:first-child),
+.scrollspy  li:not(:first-child),
+ .scrollspy li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.scrollspy .menu-group-item.active,
+.scrollspy  li.active,
+ .scrollspy li.active {
+  margin-left: -0.3rem;
+  border-left: 0.4rem solid #BF40BF;
+  background: none;
+}
+
+.scrollspy .menu-group-item.active,
+.scrollspy  li.active,
+ .scrollspy li.active,
+.scrollspy .menu-group-item:hover,
+.scrollspy  li:hover,
+ .scrollspy li:hover {
+  text-decoration: none;
+
+}
+
+.scrollspy .menu-group {
+  position: sticky;
+  margin: 0.2rem 3rem;
+}
+
+.scrollspy button:hover {
+ cursor: pointer;
+}
+
+.menu-group{
+  display:flex;
+  margin-left:1rem;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  white-space: nowrap;;
+ 
+}
+.menu-group  button.menu-group-item{
+  background-color:#ffffff;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scrollspy{
+  display:flex
 }
